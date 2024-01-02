@@ -16,20 +16,38 @@ const TAGS = {
 }
 const PROJECTS = [
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "Pokedex",
     description:
-      "Created from scratch with Next.js and Tailwind CSS. It's a library with SVG logos from the most popular brands. Optimized for SEO and performance.",
-    link: "https://svgl.vercel.app/",
-    github: "https://github.com/pheralb/svgl",
-    image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Desarrollado con Next.js y TypeScript para asegurar un código limpio y estructurado. Además, se integra con la API de Pokémon mediante Axios para obtener datos de manera eficiente y proporcionar una experiencia óptima.",
+    link: "https://next-pokedex-app.netlify.app/",
+    github: "https://github.com/drakkomaximo/next-pokemon-app",
+    image: "/projects/image1.png",
+    tags: [TAGS.NEXT],
+  },
+  {
+    title: "Todo list",
+    description:
+      "Desarrollado con React, usando estilos modernos utilizando Tailwind CSS. La persistencia de la información a nivel local se logra de manera eficiente mediante el uso de Local Storage, asegurando que tus tareas estén siempre disponibles.",
+    link: "https://todo-react-tailwind-test.netlify.app/",
+    github: "https://github.com/drakkomaximo/react-todo-tailwind",
+    image: "/projects/image2.png",
+    tags: [TAGS.TAILWIND],
+  },
+  {
+    title: "Heroes App",
+    description:
+      "Construida con React, esta aplicación aprovecha las ventajas de una arquitectura (SPA) para una navegación fluida entre las rutas. Cuenta con un buscador reactivo y la persistencia de la sesión está garantizada mediante el uso eficiente de Local Storage.",
+    link: "https://herroes-app.netlify.app/marvel",
+    github: "https://github.com/drakkomaximo/my-hero-app",
+    image: "/projects/image3.png",
+    tags: [],
   },
 ]
 ---
 
 {
   PROJECTS.map(({ image, title, description, tags }) => (
-    <article>
+    <article class="hidden duration-700 ease-in-out" data-carousel-item>
       <h3 class="text-2xl font-semibold text-yellow-800 dark:text-yellow-200 mb-2">
         {title}
       </h3>
